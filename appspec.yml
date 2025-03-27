@@ -3,6 +3,9 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/nextjs-app
+    exclude:
+      - appspec.yml
+      - scripts/
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies.sh
