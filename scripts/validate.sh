@@ -4,7 +4,7 @@
 APP_URL="http://13.126.195.249:8080"
 
 # Define SNS Topic ARN (replace with your actual SNS topic ARN)
-SNS_TOPIC_ARN="arn:aws:sns:ap-south-1:307946635035:nextjs-app:649fdeeb-cd23-4510-89f1-e2897a84eedb"
+SNS_TOPIC_ARN="arn:aws:sns:ap-south-1:307946635035:nextjs-app"
 
 # Send a request to the app and capture the HTTP status code
 HTTP_STATUS=$(curl --write-out "%{http_code}" --silent --output /dev/null "$APP_URL")
